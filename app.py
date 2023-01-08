@@ -40,14 +40,10 @@ class MoodboosterSchema(ma.Schema):
 # init schema
 moodbooster_schema = MoodboosterSchema()
 
-# moodboosters_schema = MoodboosterSchema(many=True)
-# with app.app_context():
-#     db.create_all()
-# @app.route('/', methods=['GET'])
-# def get_mbs():
-#     all_mbs = Moodboosters.query.all()
-#     result = moodboosters_schema.dump(all_mbs)
-#     return jsonify(result)
+
+@app.errorhandler(Exception)
+def handle_error(error):
+    return jsonify({'error': 'Invalid parameters or URL NotFound'})
 
 
 @app.route('/', methods=['GET'])
@@ -64,7 +60,7 @@ def get_mb_id(id):
 
 @app.route('/type=<type>', methods=['GET'])
 def get_mb_type(type):
-    if type not in ['joke', 'compliment']:
+    if type not in ['joke', 'motivate']:
         abort(404)
     mb = Moodboosters.query.filter_by(type=type).order_by(func.random()).first()
     return moodbooster_schema.jsonify(mb)
