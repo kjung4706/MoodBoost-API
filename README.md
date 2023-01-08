@@ -18,11 +18,10 @@ Responses are returned in JSON format.
 
     * Returns random message of motivation/humor
 
-    * Sample output:
-
 * GET https://moodboostapi.pythonanywhere.com/type=joke
 
     * Returns random joke
+    * Sample output:
     ```
     {
        "id": 5,
@@ -34,6 +33,7 @@ Responses are returned in JSON format.
 * GET https://moodboostapi.pythonanywhere.com/type=motivate
 
     * Returns random motivational message
+    * Sample output:
     ```
     {
        "id": 15,
