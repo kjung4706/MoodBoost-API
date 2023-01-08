@@ -15,23 +15,14 @@ Press this link for [MoodBoost API](https://moodboostapi.pythonanywhere.com) or 
 Responses are returned in JSON format.
 
 * (Default) GET https://moodboostapi.pythonanywhere.com/
-
     * Returns random message of motivation/humor
-
     * Sample output:
-
-    * ![placeholder](https://github.com/kjung4706/MoodBoost-API/placeholder.png)
-
+        * ![placeholder](https://github.com/kjung4706/MoodBoost-API/blob/main/placeholder.png)
 * GET https://moodboostapi.pythonanywhere.com/type=joke
-
     * Returns random joke
-
 * GET https://moodboostapi.pythonanywhere.com/type=motivate
-
     * Returns random motivational message
-
 * GET https://moodboostapi.pythonanywhere.com/id=<id>
-
     * Returns random message based on id
 
 
@@ -42,15 +33,10 @@ No authentication is required to use MoodBoost API.
 ### Tech Stack
 
 * Python
-
 * Flask
-
 * SQLAlchemy
-
 * marshmallow
-
 * Postman
-
 * PythonAnywhere
 
-**Developed by kjung4706 and empham1**
+**Developed by Emily Pham and Kyle Jung**
