@@ -1,0 +1,19 @@
+from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+import os
+
+# Initialize Flask application
+app = Flask(__name__)
+
+
+@app.route("/", methods=['GET'])
+def get():
+    return jsonify({'msg': 'Hello World'})
+
+
+# Run local server
+if __name__ == '__main__':
+    app.run(debug=True)
+
+pip install flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy
