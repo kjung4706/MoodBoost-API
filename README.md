@@ -44,7 +44,7 @@ Responses are returned in JSON format.
    }
     ```
 
-* GET https://moodboostapi.pythonanywhere.com/id=<id>
+* GET https://moodboostapi.pythonanywhere.com/id={id}
 
     * Returns random message based on id
 
