@@ -20,8 +20,6 @@ Responses are returned in JSON format.
 
     * Sample output:
 
-    * ![placeholder](https://github.com/kjung4706/MoodBoost-API/placeholder.png)
-
 * GET https://moodboostapi.pythonanywhere.com/type=joke
 
     * Returns random joke
